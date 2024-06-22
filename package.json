@@ -1,0 +1,47 @@
+{
+  "name": "bamboo-ui",
+  "private": false,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/bamboo-ui.umd.js",
+  "module": "./dist/bamboo-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/bamboo-ui.es.js",
+      "require": "./dist/bamboo-ui.umd.js"
+    },
+    "./dist/style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vue-tsc && vite build",
+    "story:dev": "histoire dev",
+    "story:build": "histoire build",
+    "story:preview": "histoire preview"
+  },
+  "dependencies": {
+    "@iconify/vue": "^4.1.2",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-vue-next": "^0.396.0",
+    "radix-vue": "^1.8.4",
+    "tailwind-merge": "^2.3.0",
+    "vue": "^3.4.21"
+  },
+  "devDependencies": {
+    "@histoire/plugin-vue": "^0.17.17",
+    "@types/node": "^20.14.8",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "autoprefixer": "^10.4.19",
+    "histoire": "^0.17.17",
+    "postcss": "^8.4.38",
+    "storybook": "^8.1.10",
+    "tailwindcss": "^3.4.4",
+    "tailwindcss-animate": "^1.0.7",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0",
+    "vue-tsc": "^2.0.6"
+  }
+}
